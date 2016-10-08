@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  feRerser: 2016-10-06
+  local_id: 
+  event_id: 
+  room_id: 
+  state: MyText
+  user_id: 
+
+two:
+  feRerser: 2016-10-06
+  local_id: 
+  event_id: 
+  room_id: 
+  state: MyText
+  user_id: 

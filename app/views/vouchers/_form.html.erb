@@ -1,0 +1,22 @@
+<%= simple_form_for @voucher, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :room_id %>
+  <%= error_span(@voucher[:room_id]) %>
+  <%= f.input :user_id %>
+  <%= error_span(@voucher[:user_id]) %>
+  <%= f.input :local_id %>
+  <%= error_span(@voucher[:local_id]) %>
+  <%= f.input :feemision %>
+  <%= error_span(@voucher[:feemision]) %>
+  <%= f.input :employee_id %>
+  <%= error_span(@voucher[:employee_id]) %>
+  <%= f.input :subtotal %>
+  <%= error_span(@voucher[:subtotal]) %>
+  <%= f.input :igv %>
+  <%= error_span(@voucher[:igv]) %>
+  <%= f.input :mtoTotal %>
+  <%= error_span(@voucher[:mtoTotal]) %>
+
+  <%= f.button :submit, :class => 'btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                vouchers_path, :class => 'btn btn-default' %>
+<% end %>

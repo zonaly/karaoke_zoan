@@ -1,0 +1,1 @@
+json.array! @detail_vouchers, partial: 'detail_vouchers/detail_voucher', as: :detail_voucher

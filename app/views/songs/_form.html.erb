@@ -1,0 +1,12 @@
+<%= simple_form_for @song, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :name %>
+  <%= error_span(@song[:name]) %>
+  <%= f.input :description %>
+  <%= error_span(@song[:description]) %>
+  <%= f.association :artist %> 
+  <%= error_span(@song [:artist]) %>
+
+  <%= f.button :submit, :class => 'btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                songs_path, :class => 'btn btn-default' %>
+<% end %>

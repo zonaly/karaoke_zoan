@@ -1,0 +1,20 @@
+<%= simple_form_for @employee, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :nomE %>
+  <%= error_span(@employee[:nomE]) %>
+  <%= f.input :apEm %>
+  <%= error_span(@employee[:apEm]) %>
+  <%= f.input :numDni %>
+  <%= error_span(@employee[:numDni]) %>
+  <%= f.input :direc %>
+  <%= error_span(@employee[:direc]) %>
+  <%= f.input :numtef %>
+  <%= error_span(@employee[:numtef]) %>
+  <%= f.input :fenac %>
+  <%= error_span(@employee[:fenac]) %>
+  <%= f.association :local %> 
+  <%= error_span(@employee [:local]) %>
+
+  <%= f.button :submit, :class => 'btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                employees_path, :class => 'btn btn-default' %>
+<% end %>

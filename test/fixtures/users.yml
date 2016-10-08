@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nomUser: MyText
+  apUser: MyText
+  feReg: 2016-10-06
+  feNac: 2016-10-06
+  email: MyText
+  nomUser: MyText
+  clave: MyText
+
+two:
+  nomUser: MyText
+  apUser: MyText
+  feReg: 2016-10-06
+  feNac: 2016-10-06
+  email: MyText
+  nomUser: MyText
+  clave: MyText

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  voucher_id: 
+  detail_order_id: 
+  cantProd: 1
+
+two:
+  voucher_id: 
+  detail_order_id: 
+  cantProd: 1

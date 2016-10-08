@@ -1,0 +1,1 @@
+json.partial! "detail_vouchers/detail_voucher", detail_voucher: @detail_voucher

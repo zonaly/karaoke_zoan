@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nomE: MyText
+  apEm: MyText
+  numDni: 1
+  direc: MyText
+  numtef: MyText
+  fenac: 2016-10-06
+  local_id: 
+
+two:
+  nomE: MyText
+  apEm: MyText
+  numDni: 1
+  direc: MyText
+  numtef: MyText
+  fenac: 2016-10-06
+  local_id: 

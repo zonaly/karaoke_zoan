@@ -1,4 +1,27 @@
 Rails.application.routes.draw do
+ #get 'home/index'
+ 
+ root 'home#index'
+
+  get 'incidents/index'
+
+  resources :detail_vouchers
+  resources :vouchers
+  resources :employees
+  resources :detail_orders
+  resources :orders
+  resources :reservations
+  resources :users
+  resources :rooms
+  resources :songs
+  resources :artists
+  resources :products
+  resources :events
+  resources :locals
+  resources :districts
+  
+  delete 'incidents', controller: :incidents, action: :clear
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

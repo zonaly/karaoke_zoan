@@ -1,0 +1,33 @@
+<%- model_class = Voucher -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:room_id) %>:</strong></dt>
+  <dd><%= @voucher.room_id %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:user_id) %>:</strong></dt>
+  <dd><%= @voucher.user_id %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:local_id) %>:</strong></dt>
+  <dd><%= @voucher.local_id %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:feemision) %>:</strong></dt>
+  <dd><%= @voucher.feemision %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:employee_id) %>:</strong></dt>
+  <dd><%= @voucher.employee_id %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:subtotal) %>:</strong></dt>
+  <dd><%= @voucher.subtotal %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:igv) %>:</strong></dt>
+  <dd><%= @voucher.igv %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:mtoTotal) %>:</strong></dt>
+  <dd><%= @voucher.mtoTotal %></dd>
+</dl>
+
+<%= link_to t('.back', :default => t("helpers.links.back")),
+              vouchers_path, :class => 'btn btn-default'  %>
+<%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_voucher_path(@voucher), :class => 'btn btn-default' %>
+<%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              voucher_path(@voucher),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>

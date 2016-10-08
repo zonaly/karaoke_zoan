@@ -1,0 +1,11 @@
+<%= simple_form_for @local, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :name %>
+  <%= error_span(@local[:name]) %>
+<%= f.association :district %>
+  <%= error_span(@local[:district]) %>
+
+
+  <%= f.button :submit, :class => 'btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                locals_path, :class => 'btn btn-default' %>
+<% end %>

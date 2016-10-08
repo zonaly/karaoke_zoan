@@ -1,0 +1,12 @@
+<%= simple_form_for @detail_voucher, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :voucher_id %>
+  <%= error_span(@detail_voucher[:voucher_id]) %>
+  <%= f.input :detail_order_id %>
+  <%= error_span(@detail_voucher[:detail_order_id]) %>
+  <%= f.input :cantProd %>
+  <%= error_span(@detail_voucher[:cantProd]) %>
+
+  <%= f.button :submit, :class => 'btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                detail_vouchers_path, :class => 'btn btn-default' %>
+<% end %>

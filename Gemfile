@@ -14,6 +14,9 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+# Gema de compatibilidad
+gem 'mysql2', '~> 0.3.20'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -45,3 +48,13 @@ group :development do
   gem 'spring'
 end
 
+#Gemas zonaly
+ gem 'bootstrap-sass', '~>2.3.1.0'
+
+# Bootstrap Frontend Framework Support
+  gem 'therubyracer'
+  gem 'less-rails'
+  gem 'twitter-bootstrap-rails', '>= 3.2.0', '< 3.2.2'
+  
+# Simplified Form Management Support
+  gem 'simple_form'

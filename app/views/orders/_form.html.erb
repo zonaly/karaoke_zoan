@@ -1,0 +1,16 @@
+<%= simple_form_for @order, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :name %>
+  <%= error_span(@order[:name]) %>
+  <%= f.association :local %> 
+  <%= error_span(@order [:local]) %>  
+  <%= f.association :room %> 
+  <%= error_span(@order [:room]) %>  
+  <%= f.association :user %> 
+  <%= error_span(@order [:user]) %>  
+  <%= f.input :fechPedido %>
+  <%= error_span(@order[:fechPedido]) %>
+
+  <%= f.button :submit, :class => 'btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                orders_path, :class => 'btn btn-default' %>
+<% end %>
