@@ -5,6 +5,8 @@ class Song < ActiveRecord::Base
     self.artist.name  
   end
   
+  validates :name, presence: true, 
+            uniqueness: {case_sensitive: false}
+            
   include Loggable 
-
 end

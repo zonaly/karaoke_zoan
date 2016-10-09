@@ -1,4 +1,9 @@
 class District < ActiveRecord::Base
     has_many :local
-    include Loggable 
+
+    validates :name, presence: true, 
+              uniqueness: {case_sensitive: false}
+            
+    include Loggable  
+    
 end

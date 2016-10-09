@@ -2,7 +2,7 @@ class Local < ActiveRecord::Base
   belongs_to :district
   
     def district_name    
-      self.disctrict.name  
+      self.district.name
     end
 
   validates :name, presence: true, 
